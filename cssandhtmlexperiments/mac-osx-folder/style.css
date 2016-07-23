@@ -1,0 +1,86 @@
+.folder {
+  /* thsi wil enable a 3d effect */
+  perspective: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 160px;
+  height: 120px;
+  margin: -100px 0 0 -60px;
+}
+
+.folder div {
+  width: 150px;
+  height: 115px;
+  background-color: #93bad8;
+  /*enabling 3d space to transform*/
+  transform-style: preserve-3d;
+  /* disable text selection on the folder */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -75px;
+}
+
+.folder .front {
+  border-radius: 5px 5px 0 0;
+  transform: rotateX(-30deg);
+  transform-origin: 50% 100%;
+  background-image: linear-gradient(top, #93bad8 0%, #6c9dc0 85% #628faf 100%);
+  background-image: -webkit-linear-gradient(top, #93bad8 0%, #6c9dc0 85% #628faf 100%);
+  background-image: -moz-linear-gradient(top, #93bad8 0%, #6c9dc0 85% #628faf 100%);
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(225, 225, 225, 0.3) inset;
+  z-index: 10;
+  font: bold 26px sans-serif;
+  color: #5a88a9;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
+  line-height: 115px;
+}
+
+.folder .back {
+  background-image: -webkit-linear-gradient(top, #93bad8 0%, #89afcc 10%, #5985a5 60%);
+  background-image: -moz-linear-gradient(top, #93bad8 0%, #89afcc 10%, #5985a5 60%);
+  background-image: linear-gradient(top, #93bad8 0%, #89afcc 10%, #5985a5 60%);
+  border-radius: 0 5px 0 0;
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+/*the top part*/
+
+.folder .back:before {
+  content: '';
+  width: 60px;
+  height: 10px;
+  border-radius: 4px 4px 0 0;
+  background-color: #92bad8;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15)
+}
+
+
+/*the shadow*/
+
+.folder .back:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  box-shadow: 0 4px 8px #333;
+}
+
+.folder .open .front {
+  -moz-transform: rotateX(-50deg);
+  -webkit-transform: rotateX(-50deg);
+  transform: rotateX(-50deg);
+}
