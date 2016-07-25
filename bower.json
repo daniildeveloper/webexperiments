@@ -1,0 +1,20 @@
+{
+  "name": "webexperiments",
+  "description": "I read very many blogs and do some what written is",
+  "main": "index.js",
+  "authors": [
+    "daniiltserin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/daniiltserin/webexperiments",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-ui": "^1.12.0"
+  }
+}

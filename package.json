@@ -12,5 +12,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "daniiltserin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^5.0.4",
+    "eslint": "^1.10.3",
+    "gulp": "^3.9.1"
+  }
 }
