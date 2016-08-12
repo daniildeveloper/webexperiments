@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "description": "I read very many blogs and do some what written is",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "babel-eslint": "^5.0.4",
+    "eslint": "^1.10.3",
+    "gulp": "^3.9.1"
+  },
   "devDependencies": {
-    "bootstrap" : 3.3,
-    "jquery" : 2.2
+    "bootstrap": 3.3,
+    "eslint-plugin-react": "^6.0.0",
+    "jquery": 2.2
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "daniiltserin",
-  "license": "MIT",
-  "dependencies": {
-    "babel-eslint": "^5.0.4",
-    "eslint": "^1.10.3",
-    "gulp": "^3.9.1"
-  }
+  "license": "MIT"
 }
